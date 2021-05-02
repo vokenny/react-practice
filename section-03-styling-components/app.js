@@ -7,7 +7,7 @@
     paddingLeft: 10
   };
 
-  // Statleess Functional Components
+  // Stateless Functional Components
   const Red = () => {
     let styling = {
       ...baseStyle,
@@ -99,8 +99,67 @@
     )
   }
 
+  /* React Class Components */
+  class Circle extends React.Component {
+    render() {
+      let circle = {
+        width: 100,
+        height: 100,
+        background: "red",
+        borderRadius: "50%"
+      }
+
+      return (
+        <h1 style={circle} > Circle</h1>
+      );
+    }
+  }
+
+  class Square extends React.Component {
+    render() {
+      let square = {
+        width: 100,
+        height: 100,
+        background: "red"
+      }
+
+      return (
+        <h1 style={square}>Square</h1>
+      );
+    }
+  }
+
+  class Triangle extends React.Component {
+    render() {
+      let triangle = {
+        width: 0,
+        height: 0,
+        borderLeft: "50px solid transparent",
+        borderRight: "50px solid transparent",
+        borderBottom: "100px solid red"
+      }
+
+      return (
+        <h1 style={triangle}>Triangle</h1>
+      );
+    }
+  }
+
+  class Shapes extends React.Component {
+    render() {
+      return (
+        <div>
+          <Circle />
+          <Square />
+          <Triangle />
+        </div>
+      );
+    }
+  }
+
   const destination = document.getElementById('app');
 
   // Notice the component is passed in as a closing tag
-  ReactDOM.render(<Rainbow />, destination);
+  // ReactDOM.render(<Rainbow />, destination);
+  ReactDOM.render(<Shapes />, destination);
 }());
