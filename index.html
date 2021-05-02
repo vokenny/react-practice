@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- React Library -->
+    <script
+      src="https://unpkg.com/react@17/umd/react.production.min.js"
+      crossorigin
+    ></script>
+    <!-- React DOM library -->
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"
+      crossorigin
+    ></script>
+    <!-- Babel library -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <title>Let's React!</title>
+  </head>
+  <body>
+    <!-- React is rendered here -->
+    <main id="app">React is not rendered yet</main>
+
+    <script type="text/babel">
+      ReactDOM.render(<h1>Hello World</h1>, document.getElementById('app'));
+    </script>
+  </body>
+</html>
