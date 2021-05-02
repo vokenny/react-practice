@@ -14,7 +14,7 @@
       src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"
       crossorigin
     ></script>
-    <!-- Babel library -->
+    <!-- Babel library - Transpiler for making modern JS backwards-compatible -->
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <title>Let's React!</title>
   </head>
@@ -22,16 +22,6 @@
     <!-- React is rendered here -->
     <main id="app">React is not rendered yet</main>
 
-    <script type="text/babel">
-      const hello = (
-        <div>
-          <h1>Hello World</h1>
-          <h2>I hope you have a good day</h2>
-        </div>
-      );
-      const destination = document.getElementById('app');
-
-      ReactDOM.render(hello, destination);
-    </script>
+    <script type="text/babel" src="app.js"></script>
   </body>
 </html>
