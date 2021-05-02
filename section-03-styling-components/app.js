@@ -1,46 +1,87 @@
 (function () {
   'use strict';
 
+  const baseStyle = {
+    height: 50,
+    margin: "10px auto",
+    paddingLeft: 10
+  };
+
   // Statleess Functional Components
   const Red = () => {
+    let styling = {
+      ...baseStyle,
+      backgroundColor: "red"
+    }
+
     return (
-      <h1 class="red">Red</h1>
+      <h1 style={styling}>Red</h1>
     );
   }
 
   const Orange = () => {
+    let styling = {
+      ...baseStyle,
+      backgroundColor: "orange"
+    }
+
     return (
-      <h1 class="orange">Orange</h1>
+      <h1 style={styling}>Orange</h1>
     );
   }
 
   const Yellow = () => {
+    let styling = {
+      ...baseStyle,
+      backgroundColor: "yellow"
+    }
+
     return (
-      <h1 class="yellow">Yellow</h1>
+      <h1 style={styling}>Yellow</h1>
     );
   }
 
   const Green = () => {
+    let styling = {
+      ...baseStyle,
+      backgroundColor: "green"
+    }
+
     return (
-      <h1 class="green">Green</h1>
+      <h1 style={styling}>Green</h1>
     );
   }
 
   const Blue = () => {
+    let styling = {
+      ...baseStyle,
+      backgroundColor: "blue"
+    }
+
     return (
-      <h1 class="blue">Blue</h1>
+      <h1 style={styling}>Blue</h1>
     );
   }
 
   const Indigo = () => {
+    let styling = {
+      ...baseStyle,
+      backgroundColor: "indigo"
+    }
+
     return (
-      <h1 class="indigo">Indigo</h1>
+      <h1 style={styling}>Indigo</h1>
     );
   }
 
   const Violet = () => {
+    let styling = {
+      ...baseStyle,
+      backgroundColor: "violet"
+    }
+
     return (
-      <h1 class="violet">Violet</h1>
+      <h1 style={styling}>Violet</h1>
     );
   }
 
